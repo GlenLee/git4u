@@ -1,0 +1,20 @@
+[package]
+name = "git4u-desktop"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Git4U 桌面客户端"
+workspace = "../../rust"
+
+[lib]
+name = "git4u_desktop_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { workspace = true }
+tauri-plugin-dialog = { workspace = true }
+g4u-ops = { path = "../../rust/crates/g4u-ops" }
+g4u-server = { path = "../../rust/crates/g4u-server" }

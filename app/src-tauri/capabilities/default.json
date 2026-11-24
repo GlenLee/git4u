@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Git4U 主窗口与设置窗口权限：只放开必要的目录选择与窗口创建。",
+  "windows": ["main", "settings"],
+  "permissions": [
+    "core:default",
+    "dialog:allow-open"
+  ]
+}

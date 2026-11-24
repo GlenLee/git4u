@@ -1,0 +1,10 @@
+[package]
+name = "g4u-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+g4u-model = { path = "../g4u-model" }
+g4u-ops = { path = "../g4u-ops" }
+tauri = { workspace = true }
